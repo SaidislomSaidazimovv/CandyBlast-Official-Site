@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://candyblast-official-site.vercel.app/sitemap.xml

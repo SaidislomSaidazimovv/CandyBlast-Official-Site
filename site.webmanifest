@@ -1,0 +1,17 @@
+{
+  "name": "Candy Blast",
+  "short_name": "Candy Blast",
+  "description": "Official Candy Blast mobile game website.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf4",
+  "theme_color": "#fffaf4",
+  "icons": [
+    {
+      "src": "images/ui/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
