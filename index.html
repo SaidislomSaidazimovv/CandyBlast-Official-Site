@@ -3,244 +3,182 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fffaf4">
-  <meta name="description" content="Candy Blast is a bright, handcrafted match-3 adventure coming to iPhone and Android.">
-  <meta property="og:title" content="Candy Blast — A world made of sweet surprises">
-  <meta property="og:description" content="Match, explore and carry your progress across devices in a handcrafted candy adventure.">
-  <meta property="og:image" content="https://candyblast-official-site.vercel.app/images/worlds/sundae-harbour.webp">
+  <meta name="theme-color" content="#fffdf8">
+  <meta name="description" content="Candy Blast is an original match-3 adventure for iPhone and Android. Explore four candy worlds and 20 carefully designed levels.">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Candy Blast — A little magic in every match">
+  <meta property="og:description" content="An original match-3 adventure, coming to iPhone and Android.">
   <meta property="og:url" content="https://candyblast-official-site.vercel.app/">
+  <meta property="og:image" content="https://candyblast-official-site.vercel.app/images/worlds/sundae-harbour.webp">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Candy Blast — A world made of sweet surprises</title>
+  <title>Candy Blast — A little magic in every match</title>
   <link rel="icon" href="images/ui/app-icon-512.png">
   <link rel="apple-touch-icon" href="images/ui/app-icon-512.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" href="images/ui/candyblast-logo.webp" as="image" type="image/webp">
   <link rel="preload" href="images/worlds/sundae-harbour.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"MobileApplication","name":"Candy Blast","applicationCategory":"GameApplication","operatingSystem":"Android, iOS","description":"A handcrafted mobile match-3 adventure."}
+    {"@context":"https://schema.org","@type":"MobileApplication","name":"Candy Blast","applicationCategory":"GameApplication","operatingSystem":"Android, iOS","description":"An original mobile match-3 adventure."}
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
-    <div class="nav-shell">
+    <div class="header-inner">
       <a class="brand" href="/" aria-label="Candy Blast home">
-        <img src="images/ui/app-icon-512.png" alt="" width="48" height="48">
+        <img src="images/ui/app-icon-512.png" alt="" width="40" height="40">
         <span>Candy Blast</span>
       </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-menu-button>
-        <span></span><span></span><span></span>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu" data-menu-button>
+        <span></span><span></span>
       </button>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
-        <a href="#adventure">Adventure</a>
-        <a href="#features">Features</a>
-        <a href="#worlds">Worlds</a>
-        <a href="#questions">FAQ</a>
-        <a class="nav-cta" href="#download">Coming soon</a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation" data-nav>
+        <a href="#game">The game</a>
+        <a href="#worlds">The worlds</a>
+        <a href="#questions">Questions</a>
+        <a class="nav-status" href="#release"><span class="status-dot"></span> Coming to mobile</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="adventure">
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Handcrafted for mobile</p>
-          <img class="hero-logo" src="images/ui/candyblast-logo.webp" alt="Candy Blast" width="560" height="373">
-          <h1>A little move can start a <span>big adventure.</span></h1>
-          <p class="hero-lead">Match bright candies, build clever combos and follow a joyful journey through four delicious worlds.</p>
-          <div class="store-actions" id="download">
-            <button class="store-button" type="button" disabled aria-label="Google Play version coming soon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.8 13.8 12 3.6 21.2c-.4-.4-.6-1-.6-1.6V4.4c0-.6.2-1.2.6-1.6Zm11.3 10.1 2.7 2.4-10.8 6 8.1-8.4Zm3.9-3.5 2.4 1.3c1 .6 1 2 0 2.6l-2.4 1.3-3-2.6 3-2.6ZM6.8 2.7l10.8 6-2.7 2.4-8.1-8.4Z"/></svg>
-              <span><small>Coming soon to</small><strong>Google Play</strong></span>
-            </button>
-            <button class="store-button" type="button" disabled aria-label="App Store version coming soon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.7 12.8c0-2.4 2-3.6 2.1-3.7a4.5 4.5 0 0 0-3.5-1.9c-1.5-.2-2.9.9-3.7.9-.8 0-2-1-3.3-.9a4.8 4.8 0 0 0-4.1 2.5c-1.8 3-.5 7.5 1.3 10 .9 1.2 1.9 2.5 3.2 2.4 1.3 0 1.8-.8 3.5-.8 1.6 0 2.1.8 3.5.8s2.3-1.2 3.1-2.4a10.8 10.8 0 0 0 1.5-3.1 4.2 4.2 0 0 1-3.6-3.8ZM14.3 5.6a4.2 4.2 0 0 0 1-3 4.3 4.3 0 0 0-2.8 1.4 4 4 0 0 0-1 2.9 3.6 3.6 0 0 0 2.8-1.3Z"/></svg>
-              <span><small>Coming soon to the</small><strong>App Store</strong></span>
-            </button>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="overline"><span class="overline-mark"></span> AN ORIGINAL MATCH-3 ADVENTURE</p>
+          <h1 id="hero-title">A little magic<br>in every <em>match.</em></h1>
+          <p class="hero-lead">A bright new world is waiting behind every move. Match candies, plan your next combo, and follow the trail through four handcrafted chapters.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#worlds">Explore the worlds <span aria-hidden="true">↗</span></a>
+            <span class="hero-availability"><span class="status-dot"></span> iPhone & Android · coming soon</span>
           </div>
-          <p class="release-note"><span aria-hidden="true">✦</span> First chapter: 20 carefully tuned levels</p>
+          <div class="hero-detail"><span>01 / 04</span><span>20 levels in the first chapter</span></div>
         </div>
-
-        <div class="hero-stage reveal" aria-label="Candy Blast mobile game preview">
-          <img class="floating-candy candy-a" src="images/candies/mint.svg" alt="">
-          <img class="floating-candy candy-b" src="images/candies/star.svg" alt="">
-          <img class="floating-candy candy-c" src="images/candies/berry.svg" alt="">
-          <div class="phone">
-            <div class="phone-speaker"></div>
-            <div class="phone-screen">
-              <img class="phone-world" src="images/worlds/sundae-harbour.webp" alt="">
-              <div class="phone-shade"></div>
-              <div class="phone-status"><span>9:41</span><span aria-hidden="true">● ◒ ▰</span></div>
-              <div class="phone-player"><span>SI</span><div><strong>Sweet Sailor</strong><small>Level 8</small></div><b>♥ 5</b></div>
-              <img class="phone-logo" src="images/ui/candyblast-logo.webp" alt="">
-              <button class="play-pill" type="button" tabindex="-1"><span>Play</span><i aria-hidden="true">▶</i></button>
-              <div class="phone-dock" aria-hidden="true">
-                <span><svg viewBox="0 0 24 24"><path d="M5 11h14v10H5zM8 3h3v8H8zM13 6h3v5h-3z"/></svg></span>
-                <span><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></span>
-                <span><svg viewBox="0 0 24 24"><path d="M4 7h16v13H4zM8 4h8v3H8z"/></svg></span>
-              </div>
-            </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img class="hero-image" src="images/worlds/sundae-harbour.webp" width="720" height="1280" alt="A sunlit candy harbour with islands, waterfalls and a winding route">
+            <div class="hero-image-caption"><span>SUNDAE HARBOUR</span><span>WORLD 04</span></div>
           </div>
-          <div class="hero-badge badge-level"><strong>20</strong><span>crafted<br>levels</span></div>
-          <div class="hero-badge badge-cloud">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 19h11a4 4 0 0 0 .7-7.9A6.5 6.5 0 0 0 6.1 9.6 4.7 4.7 0 0 0 7 19Z"/></svg>
-            <span>Cloud progress</span>
-          </div>
+          <img class="hero-candy hero-candy-mint" src="images/candies/mint.svg" alt="" width="110" height="110">
+          <img class="hero-candy hero-candy-star" src="images/candies/star.svg" alt="" width="100" height="100">
         </div>
       </div>
-      <div class="hero-wave" aria-hidden="true"></div>
+      <div class="hero-bottom wrap"><span>SCROLL TO DISCOVER</span><span aria-hidden="true">↓</span></div>
     </section>
 
-    <section class="quick-facts" aria-label="Game highlights">
-      <div class="section-shell quick-facts-grid">
-        <div><strong>20</strong><span>handcrafted levels</span></div>
-        <div><strong>4</strong><span>distinct candy worlds</span></div>
-        <div><strong>3D</strong><span>tactile game board</span></div>
-        <div><strong>∞</strong><span>offline-friendly fun</span></div>
+    <section class="game-section section-space" id="game" aria-labelledby="game-title">
+      <div class="wrap game-layout">
+        <div class="game-intro">
+          <p class="section-index">01 / THE GAME</p>
+          <h2 id="game-title">Make the move.<br><em>Feel the magic.</em></h2>
+          <p>Each level gives you a clear goal and room to make a clever move. Match three to start; combine special candies to turn the whole board around.</p>
+          <div class="game-highlights">
+            <div><strong>20</strong><span>designed levels</span></div>
+            <div><strong>4</strong><span>distinct worlds</span></div>
+            <div><strong>3D</strong><span>candy board</span></div>
+          </div>
+        </div>
+        <div class="game-illustration" aria-label="Illustration of Candy Blast candies">
+          <div class="game-illustration-top"><span>THE SWEET PART</span><span aria-hidden="true">✦</span></div>
+          <div class="candy-composition" aria-hidden="true">
+            <img class="illustration-candy berry" src="images/candies/berry.svg" alt="" loading="lazy">
+            <img class="illustration-candy mint" src="images/candies/mint.svg" alt="" loading="lazy">
+            <img class="illustration-candy star" src="images/candies/star.svg" alt="" loading="lazy">
+            <img class="illustration-candy diamond" src="images/candies/diamond.svg" alt="" loading="lazy">
+            <img class="illustration-candy orange" src="images/candies/orange.svg" alt="" loading="lazy">
+          </div>
+          <p>One match can change everything.</p>
+        </div>
       </div>
     </section>
 
-    <section class="play-section section-pad" id="features">
-      <div class="section-shell split-layout">
-        <div class="board-showcase reveal">
-          <div class="board-glow"></div>
-          <div class="board-card">
-            <div class="board-head"><span><b>12</b> moves</span><strong>Match the sweets</strong><span><b>2</b> goals</span></div>
-            <div class="candy-grid" aria-hidden="true">
-              <img src="images/candies/berry.svg" alt=""><img src="images/candies/mint.svg" alt=""><img src="images/candies/star.svg" alt=""><img src="images/candies/orange.svg" alt=""><img src="images/candies/diamond.svg" alt="">
-              <img src="images/candies/grape.svg" alt=""><img src="images/candies/star.svg" alt=""><img src="images/candies/mint.svg" alt=""><img src="images/candies/berry.svg" alt=""><img src="images/candies/orange.svg" alt="">
-              <img src="images/candies/mint.svg" alt=""><img class="candy-pop" src="images/candies/berry.svg" alt=""><img class="candy-pop" src="images/candies/berry.svg" alt=""><img class="candy-pop" src="images/candies/berry.svg" alt=""><img src="images/candies/star.svg" alt="">
-              <img src="images/candies/diamond.svg" alt=""><img src="images/candies/grape.svg" alt=""><img src="images/candies/orange.svg" alt=""><img src="images/candies/mint.svg" alt=""><img src="images/candies/diamond.svg" alt="">
-              <img src="images/candies/star.svg" alt=""><img src="images/candies/orange.svg" alt=""><img src="images/candies/grape.svg" alt=""><img src="images/candies/diamond.svg" alt=""><img src="images/candies/mint.svg" alt="">
-            </div>
+    <section class="worlds-section section-space" id="worlds" aria-labelledby="worlds-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 / THE JOURNEY</p>
+            <h2 id="worlds-title">A world worth<br><em>getting lost in.</em></h2>
           </div>
-          <div class="combo-chip"><span>Sweet!</span><b>+1,240</b></div>
+          <p>Four chapters, each with a distinct setting and new challenges. The first release takes you from the meadow to the harbour.</p>
         </div>
-        <div class="section-copy reveal">
-          <p class="eyebrow"><span></span> Made for your thumbs</p>
-          <h2>Easy to start.<br><em>Delightful to master.</em></h2>
-          <p>Every level has a clear goal, a readable board and responsive controls. Build striped, wrapped and prism candies, then combine them for playful chain reactions.</p>
-          <ul class="check-list">
-            <li><i><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></i><span><strong>Clear goals</strong> that grow naturally with every world.</span></li>
-            <li><i><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></i><span><strong>Helpful boosters</strong> that activate exactly where you choose.</span></li>
-            <li><i><svg viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></svg></i><span><strong>Fast feedback</strong> with crisp motion, sound and touch effects.</span></li>
+        <div class="world-grid">
+          <article class="world-card">
+            <div class="world-image"><img src="images/worlds/berry-meadow.webp" width="720" height="1280" alt="Berry Meadow with fruit trees, candy hills and a winding path" loading="lazy"></div>
+            <div class="world-meta"><span>01 / START HERE</span><h3>Berry Meadow</h3><p>Find your rhythm and make the first match.</p></div>
+          </article>
+          <article class="world-card">
+            <div class="world-image"><img src="images/worlds/mintwood.webp" width="720" height="1280" alt="Mintwood forest with glowing trees and waterfalls" loading="lazy"></div>
+            <div class="world-meta"><span>02 / KEEP GOING</span><h3>Mintwood</h3><p>Cooler colours, frosty new obstacles.</p></div>
+          </article>
+          <article class="world-card">
+            <div class="world-image"><img src="images/worlds/caramel-peaks.webp" width="720" height="1280" alt="Caramel Peaks with golden cliffs and waterfalls" loading="lazy"></div>
+            <div class="world-meta"><span>03 / CLIMB HIGHER</span><h3>Caramel Peaks</h3><p>Look ahead to find the bigger combo.</p></div>
+          </article>
+          <article class="world-card">
+            <div class="world-image"><img src="images/worlds/sundae-harbour.webp" width="720" height="1280" alt="Sundae Harbour with turquoise water and candy islands" loading="lazy"></div>
+            <div class="world-meta"><span>04 / THE FINALE</span><h3>Sundae Harbour</h3><p>Bring your journey to the sparkling shore.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-section section-space" aria-labelledby="progress-title">
+      <div class="wrap progress-layout">
+        <div class="progress-visual">
+          <img src="images/worlds/berry-meadow.webp" width="720" height="1280" alt="The first Candy Blast world with a route through a berry meadow" loading="lazy">
+          <div class="progress-visual-label"><span>YOUR JOURNEY</span><strong>Pick up where you left off.</strong></div>
+        </div>
+        <div class="progress-copy">
+          <p class="section-index">03 / YOUR PROGRESS</p>
+          <h2 id="progress-title">Your journey goes<br><em>with you.</em></h2>
+          <p>Play as a guest or sign in to keep your progress in the cloud. Your levels, stars and rewards are ready when you return.</p>
+          <ul class="progress-list">
+            <li><span>01</span><div><strong>Play your way</strong><p>Start as a guest and explore at your own pace.</p></div></li>
+            <li><span>02</span><div><strong>Keep your progress</strong><p>Save your journey with an account.</p></div></li>
+            <li><span>03</span><div><strong>Come back for more</strong><p>Collect rewards and continue from your next level.</p></div></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="worlds-section section-pad" id="worlds">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow centered"><span></span> Follow the candy trail <span></span></p>
-          <h2>Four worlds. One sweet journey.</h2>
-          <p>Each chapter brings its own atmosphere, challenge mix and handcrafted path.</p>
+    <section class="release-section section-space" id="release" aria-labelledby="release-title">
+      <div class="wrap release-layout">
+        <div class="release-copy">
+          <p class="section-index">04 / THE RELEASE</p>
+          <h2 id="release-title">The first chapter<br>is nearly here.</h2>
+          <p>Candy Blast is being prepared for iPhone and Android. Store links will appear here once the apps are approved.</p>
         </div>
-        <div class="world-grid">
-          <article class="world-card reveal">
-            <img src="images/worlds/berry-meadow.webp" alt="A colorful berry meadow candy world" loading="lazy">
-            <div><span>World 01</span><h3>Berry Meadow</h3><p>Learn the rhythm among bright berry hills.</p></div>
-          </article>
-          <article class="world-card reveal">
-            <img src="images/worlds/mintwood.webp" alt="A magical mint forest candy world" loading="lazy">
-            <div><span>World 02</span><h3>Mintwood</h3><p>Clear frosty layers beneath the glowing trees.</p></div>
-          </article>
-          <article class="world-card reveal">
-            <img src="images/worlds/caramel-peaks.webp" alt="A caramel mountain candy world" loading="lazy">
-            <div><span>World 03</span><h3>Caramel Peaks</h3><p>Climb toward trickier goals and bigger combos.</p></div>
-          </article>
-          <article class="world-card reveal">
-            <img src="images/worlds/sundae-harbour.webp" alt="A sunny sundae harbour candy world" loading="lazy">
-            <div><span>World 04</span><h3>Sundae Harbour</h3><p>Finish the chapter beside sparkling candy seas.</p></div>
-          </article>
+        <div class="release-status" aria-label="Store availability">
+          <div class="release-platform"><span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 2 11 10L3 22V2Zm12 11 3 3-12 7 9-10Zm3-5 3 2c2 1 2 3 0 4l-3 2-4-4 4-4ZM6 1l12 7-3 3L6 1Z"/></svg></span><span><strong>Google Play</strong><small>Coming soon</small></span></div>
+          <div class="release-platform"><span class="platform-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16.8 12.7c0-2.2 1.8-3.3 1.9-3.4a4 4 0 0 0-3.2-1.7c-1.4-.1-2.7.8-3.4.8-.8 0-1.9-.8-3-.8a4.4 4.4 0 0 0-3.8 2.3c-1.6 2.8-.4 6.9 1.2 9.2.8 1.1 1.8 2.3 3 2.2 1.2 0 1.7-.7 3.2-.7s2 .7 3.2.7 2.1-1.1 2.9-2.2a9.7 9.7 0 0 0 1.3-2.9 3.9 3.9 0 0 1-3.4-3.5Zm-2.2-6.6a3.9 3.9 0 0 0 .9-2.8 4 4 0 0 0-2.6 1.3 3.6 3.6 0 0 0-.9 2.7 3.4 3.4 0 0 0 2.6-1.2Z"/></svg></span><span><strong>App Store</strong><small>Coming soon</small></span></div>
         </div>
       </div>
     </section>
 
-    <section class="feature-section section-pad">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow centered"><span></span> Thoughtful from the start <span></span></p>
-          <h2>Everything your journey needs.</h2>
+    <section class="faq-section section-space" id="questions" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <div>
+          <p class="section-index">QUESTIONS</p>
+          <h2 id="faq-title">A few good<br><em>things to know.</em></h2>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <div class="feature-icon pink"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></div>
-            <h3>Lives that make sense</h3><p>See exactly how many lives remain and when the next one returns.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon blue"><svg viewBox="0 0 24 24"><path d="M7 19h11a4 4 0 0 0 .7-7.9A6.5 6.5 0 0 0 6.1 9.6 4.7 4.7 0 0 0 7 19Z"/><path d="m9 14 2 2 4-5"/></svg></div>
-            <h3>Progress in the cloud</h3><p>Sign in to keep levels, stars, rewards and settings across devices.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon yellow"><svg viewBox="0 0 24 24"><path d="m12 2 2.6 5.4 5.9.8-4.3 4.2 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.2 5.9-.8L12 2Z"/></svg></div>
-            <h3>Rewards worth opening</h3><p>Daily gifts and Lucky Spin rewards feed directly into your adventure.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon green"><svg viewBox="0 0 24 24"><path d="M5 18V8l7-4 7 4v10l-7 3-7-3Z"/><path d="m5 8 7 4 7-4M12 12v9"/></svg></div>
-            <h3>Ready when you are</h3><p>Core play stays available after the first load, even with a weak connection.</p>
-          </article>
+        <div class="faq-list">
+          <details><summary>When can I download Candy Blast?<span aria-hidden="true"></span></summary><p>We are preparing the first mobile release. Once the apps are approved, this site will link directly to their Google Play and App Store pages.</p></details>
+          <details><summary>How many levels are in the first release?<span aria-hidden="true"></span></summary><p>The first chapter has 20 designed levels across four worlds.</p></details>
+          <details><summary>Can I play without an account?<span aria-hidden="true"></span></summary><p>Yes. Guest play stores progress on your device. Signing in adds cloud progress.</p></details>
+          <details><summary>Can I play offline?<span aria-hidden="true"></span></summary><p>Core play works after the game has loaded. Account sign-in and cloud sync require a connection.</p></details>
         </div>
-      </div>
-    </section>
-
-    <section class="account-section section-pad">
-      <div class="section-shell account-card reveal">
-        <div class="account-copy">
-          <p class="eyebrow"><span></span> Your adventure, remembered</p>
-          <h2>Play here. Continue there.</h2>
-          <p>Create a Candy Blast profile with email, Google or Apple and carry your progress to another device.</p>
-          <div class="account-points"><span><i></i>Secure sign-in</span><span><i></i>Automatic sync</span><span><i></i>Guest play included</span></div>
-        </div>
-        <div class="profile-stack" aria-hidden="true">
-          <div class="profile-card profile-back"><img src="images/candies/star.svg" alt=""><span><b>18</b> levels</span></div>
-          <div class="profile-card profile-front"><img src="images/ui/app-icon-512.png" alt=""><div><small>Welcome back</small><strong>Sweet Sailor</strong><span>★★★★☆ · Level 8</span></div><b>Synced</b></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section section-pad" id="questions">
-      <div class="section-shell faq-layout">
-        <div class="section-copy reveal">
-          <p class="eyebrow"><span></span> Good to know</p>
-          <h2>Questions before your first move?</h2>
-          <p>Here are the details for the first Candy Blast mobile release.</p>
-        </div>
-        <div class="faq-list reveal">
-          <details><summary>When will Candy Blast be available?<span></span></summary><p>The first Android and iPhone release is being polished now. Store links will appear here as soon as the builds are approved.</p></details>
-          <details><summary>How many levels are included?<span></span></summary><p>The first chapter contains 20 handcrafted levels across four worlds. More chapters can follow after the launch build is stable.</p></details>
-          <details><summary>Can I play without an account?<span></span></summary><p>Yes. Guest play stores progress on the device. Signing in adds cloud backup and cross-device progress.</p></details>
-          <details><summary>Does it work offline?<span></span></summary><p>Core gameplay is designed to keep working after the game has loaded. Sign-in, cloud sync and online features need a connection.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta" aria-labelledby="cta-title">
-      <img class="cta-candy cta-left" src="images/candies/mint.svg" alt="">
-      <img class="cta-candy cta-right" src="images/candies/star.svg" alt="">
-      <div class="section-shell final-cta-inner reveal">
-        <img src="images/ui/candyblast-logo.webp" alt="" width="280" height="187">
-        <h2 id="cta-title">Your sweetest journey is almost ready.</h2>
-        <p>Android and iPhone editions are coming soon.</p>
-        <a href="#download">See store availability</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="section-shell footer-grid">
-      <a class="footer-brand" href="/"><img src="images/ui/app-icon-512.png" alt="" width="52" height="52"><span><strong>Candy Blast</strong><small>Small moves. Big candy magic.</small></span></a>
-      <div class="footer-links"><strong>Explore</strong><a href="#features">Features</a><a href="#worlds">Worlds</a><a href="#questions">FAQ</a></div>
-      <div class="footer-links"><strong>Legal</strong><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></div>
-      <div class="footer-note"><strong>Coming to mobile</strong><p>Designed for Android and iPhone with touch-first play.</p></div>
+    <div class="wrap footer-main">
+      <div><a class="brand footer-brand" href="/"><img src="images/ui/app-icon-512.png" alt="" width="40" height="40"><span>Candy Blast</span></a><p>An original match-3 adventure for your pocket.</p></div>
+      <div class="footer-links"><a href="#game">The game</a><a href="#worlds">The worlds</a><a href="#release">Availability</a></div>
+      <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#questions">Questions</a></div>
     </div>
-    <div class="section-shell footer-bottom"><span>© 2026 Candy Blast. All rights reserved.</span><span>Made with care for puzzle players.</span></div>
+    <div class="wrap footer-bottom"><span>© 2026 Candy Blast</span><span>Made for the joy of one more move.</span></div>
   </footer>
 </body>
 </html>

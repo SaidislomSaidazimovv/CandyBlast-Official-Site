@@ -1,39 +1,24 @@
-const header = document.querySelector("[data-header]");
-const button = document.querySelector("[data-menu-button]");
-const nav = document.querySelector("[data-nav]");
+const menuButton = document.querySelector("[data-menu-button]");
+const navigation = document.querySelector("[data-nav]");
 
-const closeMenu = () => {
-  if (!button || !nav) return;
-  button.setAttribute("aria-expanded", "false");
-  button.setAttribute("aria-label", "Open menu");
-  nav.classList.remove("is-open");
-};
+function closeMenu() {
+  if (!menuButton || !navigation) return;
+  menuButton.setAttribute("aria-expanded", "false");
+  menuButton.setAttribute("aria-label", "Open menu");
+  navigation.classList.remove("is-open");
+}
 
-button?.addEventListener("click", () => {
-  const open = button.getAttribute("aria-expanded") === "true";
-  button.setAttribute("aria-expanded", String(!open));
-  button.setAttribute("aria-label", open ? "Open menu" : "Close menu");
-  nav.classList.toggle("is-open", !open);
+menuButton?.addEventListener("click", () => {
+  const next = menuButton.getAttribute("aria-expanded") !== "true";
+  menuButton.setAttribute("aria-expanded", String(next));
+  menuButton.setAttribute("aria-label", next ? "Close menu" : "Open menu");
+  navigation.classList.toggle("is-open", next);
 });
 
-nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+navigation?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMenu();
 });
-
-const updateHeader = () => header?.classList.toggle("is-scrolled", window.scrollY > 12);
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
-
-if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  document.documentElement.classList.add("has-motion");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: "0px 0px -30px" });
-  document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-}
+document.addEventListener("click", (event) => {
+  if (!navigation?.contains(event.target) && !menuButton?.contains(event.target)) closeMenu();
+});
